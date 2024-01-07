@@ -20,7 +20,7 @@ const NewGoal = ({ onAdd }: AddGoal) => {
 
     if (isValid) {
       onAdd(enteredGoal, enteredSummary);
-      event.currentTarget.value.reset();
+      event.currentTarget.value?.reset();
     } else {
       setError("Please provide valid values");
     }

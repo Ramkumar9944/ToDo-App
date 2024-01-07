@@ -33,7 +33,7 @@ function App() {
     <main>
       <div>
         <Header image={{ src: GoalImage, alt: "Goal Image" }}>
-          <h1>Your Course Goals</h1>
+          <h1>Your Goals</h1>
         </Header>
         <NewGoal onAdd={addGoalHandler} />
         <CourseGoalList goals={goals} onDelete={deleteGoalHandler} />
